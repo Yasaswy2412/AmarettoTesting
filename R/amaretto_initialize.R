@@ -16,7 +16,7 @@ CreateRegulatorData <- function(MA_matrix = MA_matrix, CNV_matrix = NULL, MET_ma
     if (nrow(CNV_matrix) > 0) {
         CNV_matrix = FindTranscriptionallyPredictive_CNV(MA_matrix, CNV_matrix, PvalueThreshold = PvalueThreshold, RsquareThreshold = RsquareThreshold)
     }
-    cat("\tFound", length(rownames(CNV_matrix)), "CNV driver genes.\n")
+    cat("\tFound", length(rownames(CNV_matrix)), "CNV driver genes Yasaswy Changes.\n")
     if (is.null(MET_matrix)) 
         MET_matrix <- matrix(0, nrow = 0, ncol = 0)
     if (nrow(MET_matrix) > 1) {
